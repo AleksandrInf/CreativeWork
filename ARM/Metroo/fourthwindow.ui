@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FourthWindow</class>
+ <widget class="QWidget" name="FourthWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1073</width>
+    <height>323</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>290</y>
+     <width>80</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Назад</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>50</y>
+     <width>471</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <row>
+    <property name="text">
+     <string>Станция 1</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Станция 2</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Станция 3</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Станция 4</string>
+    </property>
+   </row>
+   <column>
+    <property name="text">
+     <string>Станция 1</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Станция 2</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Станция 3</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Станция 4</string>
+    </property>
+   </column>
+   <item row="0" column="0">
+    <property name="text">
+     <string>-</string>
+    </property>
+   </item>
+   <item row="0" column="1">
+    <property name="text">
+     <string>60руб</string>
+    </property>
+   </item>
+   <item row="0" column="2">
+    <property name="text">
+     <string>120руб</string>
+    </property>
+   </item>
+   <item row="0" column="3">
+    <property name="text">
+     <string>170руб</string>
+    </property>
+   </item>
+   <item row="1" column="0">
+    <property name="text">
+     <string>60руб</string>
+    </property>
+   </item>
+   <item row="1" column="1">
+    <property name="text">
+     <string>-</string>
+    </property>
+   </item>
+   <item row="1" column="2">
+    <property name="text">
+     <string>60руб</string>
+    </property>
+   </item>
+   <item row="1" column="3">
+    <property name="text">
+     <string>110руб</string>
+    </property>
+   </item>
+   <item row="2" column="0">
+    <property name="text">
+     <string>120руб</string>
+    </property>
+   </item>
+   <item row="2" column="1">
+    <property name="text">
+     <string>60руб</string>
+    </property>
+   </item>
+   <item row="2" column="2">
+    <property name="text">
+     <string>-</string>
+    </property>
+   </item>
+   <item row="2" column="3">
+    <property name="text">
+     <string>50руб</string>
+    </property>
+   </item>
+   <item row="3" column="0">
+    <property name="text">
+     <string>170руб</string>
+    </property>
+   </item>
+   <item row="3" column="1">
+    <property name="text">
+     <string>110руб</string>
+    </property>
+   </item>
+   <item row="3" column="2">
+    <property name="text">
+     <string>50руб</string>
+    </property>
+   </item>
+   <item row="3" column="3">
+    <property name="text">
+     <string>-</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>50</y>
+     <width>471</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <row>
+    <property name="text">
+     <string>Станция 1</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Станция 2</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Станция 3</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Станция 4</string>
+    </property>
+   </row>
+   <column>
+    <property name="text">
+     <string>Станция 1</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Станция 2</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Станция 3</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Станция 4</string>
+    </property>
+   </column>
+   <item row="0" column="0">
+    <property name="text">
+     <string>-</string>
+    </property>
+   </item>
+   <item row="0" column="1">
+    <property name="text">
+     <string>50руб</string>
+    </property>
+   </item>
+   <item row="0" column="2">
+    <property name="text">
+     <string>100руб</string>
+    </property>
+   </item>
+   <item row="0" column="3">
+    <property name="text">
+     <string>140руб</string>
+    </property>
+   </item>
+   <item row="1" column="0">
+    <property name="text">
+     <string>50руб</string>
+    </property>
+   </item>
+   <item row="1" column="1">
+    <property name="text">
+     <string>-</string>
+    </property>
+   </item>
+   <item row="1" column="2">
+    <property name="text">
+     <string>50руб</string>
+    </property>
+   </item>
+   <item row="1" column="3">
+    <property name="text">
+     <string>90руб</string>
+    </property>
+   </item>
+   <item row="2" column="0">
+    <property name="text">
+     <string>100руб</string>
+    </property>
+   </item>
+   <item row="2" column="1">
+    <property name="text">
+     <string>50руб</string>
+    </property>
+   </item>
+   <item row="2" column="2">
+    <property name="text">
+     <string>-</string>
+    </property>
+   </item>
+   <item row="2" column="3">
+    <property name="text">
+     <string>40руб</string>
+    </property>
+   </item>
+   <item row="3" column="0">
+    <property name="text">
+     <string>140руб</string>
+    </property>
+   </item>
+   <item row="3" column="1">
+    <property name="text">
+     <string>90руб</string>
+    </property>
+   </item>
+   <item row="3" column="2">
+    <property name="text">
+     <string>40руб</string>
+    </property>
+   </item>
+   <item row="3" column="3">
+    <property name="text">
+     <string>-</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>20</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Скоростная электричка</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>20</y>
+     <width>141</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Обычная эелектричка</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>210</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Перейти к оплате</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>210</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Перейти к оплате</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

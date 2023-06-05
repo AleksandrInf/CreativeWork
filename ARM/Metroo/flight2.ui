@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Flight2</class>
+ <widget class="QWidget" name="Flight2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>488</width>
+    <height>392</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>360</y>
+     <width>80</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Назад</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>21</y>
+     <width>461</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <row>
+    <property name="text">
+     <string>Рейс1</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>-Рейс1</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Рейс2</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>-Рейс2</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>Рейс3</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>-Рейс3</string>
+    </property>
+   </row>
+   <column>
+    <property name="text">
+     <string>Станция 1</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Станция 2</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Станция 3</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Станция 4</string>
+    </property>
+   </column>
+   <item row="0" column="0">
+    <property name="text">
+     <string>8:30</string>
+    </property>
+   </item>
+   <item row="0" column="1">
+    <property name="text">
+     <string>9:30</string>
+    </property>
+   </item>
+   <item row="0" column="2">
+    <property name="text">
+     <string>10:20</string>
+    </property>
+   </item>
+   <item row="0" column="3">
+    <property name="text">
+     <string>11:00</string>
+    </property>
+   </item>
+   <item row="1" column="0">
+    <property name="text">
+     <string>13:40</string>
+    </property>
+   </item>
+   <item row="1" column="1">
+    <property name="text">
+     <string>12:40</string>
+    </property>
+   </item>
+   <item row="1" column="2">
+    <property name="text">
+     <string>11:50</string>
+    </property>
+   </item>
+   <item row="1" column="3">
+    <property name="text">
+     <string>11:10</string>
+    </property>
+   </item>
+   <item row="2" column="0">
+    <property name="text">
+     <string>13:50</string>
+    </property>
+   </item>
+   <item row="2" column="1">
+    <property name="text">
+     <string>14:40</string>
+    </property>
+   </item>
+   <item row="2" column="2">
+    <property name="text">
+     <string>15:30</string>
+    </property>
+   </item>
+   <item row="2" column="3">
+    <property name="text">
+     <string>16:10</string>
+    </property>
+   </item>
+   <item row="3" column="0">
+    <property name="text">
+     <string>18:50</string>
+    </property>
+   </item>
+   <item row="3" column="1">
+    <property name="text">
+     <string>17:50</string>
+    </property>
+   </item>
+   <item row="3" column="2">
+    <property name="text">
+     <string>17:00</string>
+    </property>
+   </item>
+   <item row="3" column="3">
+    <property name="text">
+     <string>16:20</string>
+    </property>
+   </item>
+   <item row="4" column="0">
+    <property name="text">
+     <string>19:00</string>
+    </property>
+   </item>
+   <item row="4" column="1">
+    <property name="text">
+     <string>20:00</string>
+    </property>
+   </item>
+   <item row="4" column="2">
+    <property name="text">
+     <string>20:50</string>
+    </property>
+   </item>
+   <item row="4" column="3">
+    <property name="text">
+     <string>21:30</string>
+    </property>
+   </item>
+   <item row="5" column="0">
+    <property name="text">
+     <string>00:10</string>
+    </property>
+   </item>
+   <item row="5" column="1">
+    <property name="text">
+     <string>23:10</string>
+    </property>
+   </item>
+   <item row="5" column="2">
+    <property name="text">
+     <string>22:20</string>
+    </property>
+   </item>
+   <item row="5" column="3">
+    <property name="text">
+     <string>21:40</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>260</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Перейти к оплате</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
