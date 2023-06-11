@@ -95,49 +95,7 @@ void TSP::on_Btn_Add_Top_clicked()
         openGlW->redraw();
     }
 }
-// функция для обработки событий конпки "удалить врешину"
-void TSP::on_Btn_Del_Top_clicked()
-{
-    ui->L_Errors->setText("");
-    ui->L_Path_length->setText("");
-    ui->L_Errors->setText("");
-    if(knot_count != 0)
-    {
-        QString del = ui->LE_Del_Top_index->text();
-        int del_index = del.toInt()-1;
-        if(del_index == -1)
-        {
-            ui->L_Errors->setText("Заполните пустые поля Удалить вершину!");
-        }
-        else if(del_index+1>knot_count)
-        {
-            ui->L_Errors->setText("Введеной вершины в графе нет!");
-        }
-        else
-        {
-            TOP del_top = tops[del_index];
-            flag[del_top.pos] = 0;
-            tops.erase(tops.begin() + del_index);
-            QVector <EDGE> new_edges;
-            for(int i = 0; i < edges.size(); i++)
-            {
-                if(!(edges[i].x_from == del_top.x && edges[i].y_from == del_top.y) && !(edges[i].x_to == del_top.x && edges[i].y_to == del_top.y))
-                {
-                    new_edges.push_back(edges[i]);
-                }
-            }
-            edges=new_edges;
-            for(int i = 0; i < knot_count; i++)
-            {
-                map[i].erase(map[i].begin() + del_index);
-            }
-            map.erase(map.begin() + del_index);
-            knot_count--;
-            openGlW->redraw();
-        }
-    }
-    ui->LE_Del_Top_index->setText("");
-}
+
 // функция для обработки событий кнопки "Добавить ребро (ориентированный)"
 void TSP::on_Btn_Add_Edge_1_clicked()
 {
@@ -355,4 +313,47 @@ void TSP::on_Btn_Calculate_clicked()
     ui->LE_Add_Edge_2_Top_1->setText("");
     ui->LE_Add_Edge_2_Top_2->setText("");
     ui->LE_Add_Edge_2_Weight->setText("");
+}
+// функция для обработки событий конпки "удалить врешину"
+void TSP::on_Btn_Del_Top_clicked()
+{
+    ui->L_Errors->setText("");
+    ui->L_Path_length->setText("");
+    ui->L_Errors->setText("");
+    if(knot_count != 0)
+    {
+        QString del = ui->LE_Del_Top_index->text();
+        int del_index = del.toInt()-1;
+        if(del_index == -1)
+        {
+            ui->L_Errors->setText("Заполните пустые поля Удалить вершину!");
+        }
+        else if(del_index+1>knot_count)
+        {
+            ui->L_Errors->setText("Введеной вершины в графе нет!");
+        }
+        else
+        {
+            TOP del_top = tops[del_index];
+            flag[del_top.pos] = 0;
+            tops.erase(tops.begin() + del_index);
+            QVector <EDGE> new_edges;
+            for(int i = 0; i < edges.size(); i++)
+            {
+                if(!(edges[i].x_from == del_top.x && edges[i].y_from == del_top.y) && !(edges[i].x_to == del_top.x && edges[i].y_to == del_top.y))
+                {
+                    new_edges.push_back(edges[i]);
+                }
+            }
+            edges=new_edges;
+            for(int i = 0; i < knot_count; i++)
+            {
+                map[i].erase(map[i].begin() + del_index);
+            }
+            map.erase(map.begin() + del_index);
+            knot_count--;
+            openGlW->redraw();
+        }
+    }
+    ui->LE_Del_Top_index->setText("");
 }
