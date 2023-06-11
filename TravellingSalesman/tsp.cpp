@@ -2,20 +2,17 @@
 #include "ui_tsp.h"
 #include "top.h"
 #include "edge.h"
-
 #include <QPainter>
 #include <QtMath>
 #include <QIntValidator>
-
+extern QVector<TOP> tops;
+extern QVector<EDGE> edges;
+extern QVector<QVector<int>> map;
 const int graph_R = 200;
 const int shift_x = 250;
 const int shift_y = 250;
 const double pi = 3.1415;
 const int max_knot_count = 8;
-
-extern QVector<TOP> tops;
-extern QVector<EDGE> edges;
-extern QVector<QVector<int>> map;
 
 bool flag[max_knot_count] = {0, 0, 0, 0, 0, 0, 0, 0};
 int knot_count = 0;
@@ -41,6 +38,33 @@ TSP::~TSP()
 {
     delete ui;
 }
+// функция для обработки событий кнопки "Clear"
+void TSP::on_L_Clear_clicked()
+{
+    knot_count=0;
+    tops.clear();
+    tops.squeeze();
+    edges.clear();
+    edges.squeeze();
+    map.clear();
+    map.squeeze();
+    for(int i = 0; i < max_knot_count; i++)
+    {
+        flag[i]=0;
+    }
+    ui->L_Errors->setText("");
+    ui->LE_Del_Top_index->setText("");
+    ui->LE_Add_Edge_1_Top_1->setText("");
+    ui->LE_Add_Edge_1_Top_2->setText("");
+    ui->LE_Add_Edge_1_Weight->setText("");
+    ui->LE_Add_Edge_2_Top_1->setText("");
+    ui->LE_Add_Edge_2_Top_2->setText("");
+    ui->LE_Add_Edge_2_Weight->setText("");
+    ui->L_Result->setText("");
+    ui->L_Path_length->setText("");
+    openGlW->redraw();
+}
+
 // функция для обработки событий конпки "добавить вершину"
 void TSP::on_Btn_Add_Top_clicked()
 {
@@ -331,31 +355,4 @@ void TSP::on_Btn_Calculate_clicked()
     ui->LE_Add_Edge_2_Top_1->setText("");
     ui->LE_Add_Edge_2_Top_2->setText("");
     ui->LE_Add_Edge_2_Weight->setText("");
-}
-
-// функция для обработки событий кнопки "Clear"
-void TSP::on_L_Clear_clicked()
-{
-    knot_count=0;
-    tops.clear();
-    tops.squeeze();
-    edges.clear();
-    edges.squeeze();
-    map.clear();
-    map.squeeze();
-    for(int i = 0; i < max_knot_count; i++)
-    {
-        flag[i]=0;
-    }
-    ui->L_Errors->setText("");
-    ui->LE_Del_Top_index->setText("");
-    ui->LE_Add_Edge_1_Top_1->setText("");
-    ui->LE_Add_Edge_1_Top_2->setText("");
-    ui->LE_Add_Edge_1_Weight->setText("");
-    ui->LE_Add_Edge_2_Top_1->setText("");
-    ui->LE_Add_Edge_2_Top_2->setText("");
-    ui->LE_Add_Edge_2_Weight->setText("");
-    ui->L_Result->setText("");
-    ui->L_Path_length->setText("");
-    openGlW->redraw();
 }
