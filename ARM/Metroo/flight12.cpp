@@ -44,7 +44,7 @@ void Flight12::on_Save_clicked()
         return;
     }
 
-    // создание файла, название которого будет зависить от номера room
+    // создание файла, название которого будет зависить от номера flight
     QString fileName = "flight_" + QString::number(roomNumber) + ".txt";
     QFile file(fileName);
     if (file.open(QIODevice::WriteOnly | QIODevice::Append | QIODevice::Text))
